@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}My Symfony App{% endblock %}</title>
+    <!-- You can add CSS/JS links here -->
+</head>
+<body>
+    <!-- Header -->
+    {% include 'partials/header.html.twig' %}
+
+    <!-- Main content area -->
+    <div class="container">
+        {% block content %}{% endblock %}
+    </div>
+
+    <!-- Footer -->
+    {% include 'partials/footer.html.twig' %}
+</body>
+</html>
